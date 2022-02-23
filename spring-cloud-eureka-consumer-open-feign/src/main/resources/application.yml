@@ -1,0 +1,24 @@
+server:
+  port: 80
+
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://eureka-one.com:7001/eureka
+#      defaultZone: http://eureka-one.com:7001/eureka, http://eureka-two.com:7002/eureka
+
+feign:
+  client:
+    config:
+      default:
+        connect-timeout: 5000
+        read-timeout: 5000
+        logger-level: FULL
+  hystrix:
+    enabled: true
+
+logging:
+  level:
+    io.gitee.oldpassive.spring.cloud.service.OpenFeignPaymentService: debug

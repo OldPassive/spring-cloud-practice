@@ -1,0 +1,14 @@
+server:
+  port: 8001
+
+spring:
+  application:
+    name: cloud-hystrix-service-provider
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetchRegistry: true
+    service-url:
+      #      defaultZone: http://eureka-one.com:7001/eureka, http://eureka-two.com:7002/eureka
+      defaultZone: http://eureka-one.com:7001/eureka
