@@ -8,7 +8,7 @@ spring:
     config:
       server:
         git:
-          uri: https://gitee.com/oldpassive/spring-cloud-config-practice.git
+          uri: https://github.com/OldPassive/spring-cloud-config-practice.git
           search-paths:
             - spring-cloud-config-practice
       label: master
